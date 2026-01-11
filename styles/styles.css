@@ -1,0 +1,274 @@
+@font-face {
+    font-family: satoshi;
+    src: url('../fonts/Satoshi-Regular.woff2');
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: satoshi;
+}
+
+.welcome-section {
+    min-height: 90vh;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.contact-section {
+    min-height: 80vh;
+    text-align: center;
+    align-content: center;
+    font-size: clamp(1rem, 2vw, 5rem);
+}
+
+.buttons-section {
+    display: flex;
+    margin-left: 3%;
+    gap: 1em;
+}
+
+.contact-section a {
+    text-decoration: none;
+    color: white;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.projects-section {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+    justify-content: center;
+}
+
+.image-grid {
+    width: 100%;
+    border-radius: 1em;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+
+.card-img {
+    font-size: clamp(1.2rem, 2vw, 5rem);
+}
+
+.double-scroll {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    padding: 3rem 3rem;
+    min-height: 100vh;
+}
+
+.double-scroll-title {
+    position: sticky;
+    top: 1.5vh;
+    height: fit-content;
+}
+
+.double-scroll-title h2 {
+    font-size: 40pt;
+    padding-top: 32px;
+    margin-bottom: 0;
+    padding: 0;
+    font-weight: 100;
+    line-height: 40pt;
+}
+
+.double-scroll-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-only-card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2rem;
+}
+
+.img-only-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    aspect-ratio: 4/3;
+    border-radius: 2em;
+}
+
+.double-scroll-subtitle {
+    color: #c7c7c7;
+    font-size: 16pt;
+    margin-top: 24pt;
+    margin-bottom: 24pt;
+}
+
+.double-scroll-desc {
+    color: #e8e8e8;
+    font-size: 16pt;
+    line-height: 24pt;
+}
+
+.double-scroll-desc-first {
+    margin-bottom: 24pt;
+}
+
+.btn {
+    background-color: #0088ff;
+    border: 0;
+    color: #f5f5f5;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 1em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-img {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 20px;
+    width: 30px;
+    padding-left: 0.5em;
+}
+
+.btn-img-download {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    padding-left: 0.5em;
+}
+
+
+.btn-img-dxa {
+    background: none;
+    border: none;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    padding-left: 0.5em;
+}
+
+.btn:hover {
+    background-color: #0062b7;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav a img {
+    height: clamp(1.5rem, 2vw, 5rem);
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:last-child {
+    margin-left: auto;
+    padding-right: 1.5em;
+    padding-left: 3em;
+}
+
+.nav a:first-child {
+    padding-right: 3em;
+    padding-left: 1.5em;
+}
+
+
+.contact-nav {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+
+.contact-nav a {
+    padding-left: 3rem;
+    padding-top: 3rem;
+    border-radius: 1em;
+}
+
+.contact-nav a img {
+    height: 3em;
+}
+
+
+
+@media(max-width: 600px) {
+    .grid-cols-2 {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    .buttons-section {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1200px) {
+    .double-scroll {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .double-scroll-title {
+        position: relative;
+        padding: 1rem 2rem;
+        top: 1vh;
+        height: fit-content;
+    }
+
+    .double-scroll-title h2 {
+        font-size: 32pt;
+    }
+
+    .img-only-card img {
+        border-radius: 0em;
+    }
+
+    .img-only-card video {
+        border-radius: 0em;
+    }
+
+    .double-scroll-content {
+        gap: 0.5rem;
+    }
+}
