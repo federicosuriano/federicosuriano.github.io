@@ -209,6 +209,25 @@ body {
     padding-left: 1.5em;
 }
 
+.nav-single-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 10vh;
+}
+
+.nav-single-child a {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5em;
+    font-size: clamp(1.5rem, 2vw, 5rem);
+    text-decoration: none;
+    color: white;
+    margin-left: auto;
+    padding-right: 1.5em;
+    padding-left: 3em;
+}
+
 
 .contact-nav {
     display: flex;
