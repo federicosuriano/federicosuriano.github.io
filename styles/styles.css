@@ -232,6 +232,7 @@ body {
 .contact-nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 10vh;
 }
 
@@ -242,7 +243,7 @@ body {
 }
 
 .contact-nav a img {
-    height: 3em;
+    height: clamp(1.5rem, 2vw, 5rem);
 }
 
 
